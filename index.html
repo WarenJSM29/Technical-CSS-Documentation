@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <title>
+            Technical CSS Documentation
+        </title>
+    </head>
+    <body id="background-photo" class="body-config">
+        <nav id="navbar">
+            <img id="img-logo" src="Images/CSS3-Logo.png" alt="CSS">
+            <p class="header-nav">Documentation</p>
+            <ul class="ul-style">
+                <li class="li-death-style">
+                    <a class="nav-link" href="#Introduction">Introduction</a>
+                </li>
+                <li class="li-death-style">
+                    <a class="nav-link" href="#Main_parts_of_CSS">Main parts of CSS</a>
+                </li>
+                <li class="li-death-style">
+                    <a class="nav-link" href="#CSS_language_evolution">CSS language evolution</a>
+                </li>
+                <li class="li-death-style">
+                    <a class="nav-link" href="#Separate_CSS_code_from_HTML_code">Separate CSS code from HTML code</a>
+                </li>
+                <li class="li-death-style">
+                    <a class="nav-link" href="#Associate_a_CSS_to_a_web_page">Associate a CSS to a web page</a>
+                </li>
+                <li class="li-death-style">
+                    <a class="nav-link" href="#Alternative_ways_to_load_CSS">Alternative ways to load CSS</a>
+                </li>
+                <li class="li-death-style">
+                    <a class="nav-link" href="#CSS_selectors">CSS selectors</a>
+                </li>
+                <li class="li-death-style">
+                    <a class="nav-link" href="#Properties_and_values_in_CSS">Properties and values in CSS</a>
+                </li>
+                <li class="li-death-style">
+                    <a class="nav-link" href="#CSS_preprocessors">CSS preprocessors</a>
+                </li>
+                <li class="li-death-style">
+                    <a class="nav-link" href="#CSS_Frameworks">CSS Frameworks</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <article>
+                    <p>
+                        CSS comes from the initials of "Cascading Style Sheets", which we translate as "Cascading Style Sheets". It is the second most essential language for creating web pages. The first would be HTML, with which the content of the page is defined. The second CSS, with which the part of the presentation is defined, that is, how the elements of the page should be displayed, their position, shape, spacing, colors and, in short, all the aesthetic part.
+                    </p>
+
+                    <p>
+                        CSS does not make any sense without HTML, just as today HTML without CSS would also be impossible, since the web has evolved in such a way that its appearance is essential and CSS is the only way to achieve customization.
+                    </p>
+                </article>
+            </section>
+            <hr>
+            <section class="main-section" id="Main_parts_of_CSS">
+                <header>Main parts of CSS</header>
+                <article>
+                    <p>
+                        To develop with CSS we have to work with a series of elements, through which the styles are declared, basically these are the most important:
+                    </p>
+
+                    <ul>
+                        <li>
+                            <strong>Selectors</strong>, through which we can specify which elements of the page we are referring to.
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Style</strong> attributes to define what things we want to style on the indicated selectors.
+                        </li>
+                        <br>
+                        <li>
+                            An array of <strong>values</strong>, indicating which style should be applied to each attribute on each selector. The values are expressed with <strong>CSS units</strong>, which are used to quantify the values (pixels, points...).
+                        </li>
+                    </ul>
+
+                    <p>
+                        Learning CSS is not difficult. Basically it is about understanding those main components and knowing the possible variants that exist to achieve the styles we need. Of course, it also has a good part of creativity, but most of the time the design is delivered previously before developing a website, so in reality what is most required is technical knowledge.
+                    </p>
+
+                    <p>
+                        When using CSS professionally, many details and good practices must be taken into account, such as code organization, reuse, optimization, etc.
+                    </p>
+                </article>
+            </section>
+            <hr>
+            <section class="main-section" id="CSS_language_evolution">
+                <header>CSS language evolution</header>
+                <article>
+                    <p>
+                        Cascading style sheets came to the world of the web much later than the HTML language. Although it was proposed in 1994, the first standard would not arrive until practically well into 1997. It would be CSS 1.
+                    </p>
+                    
+                    <p>
+                        Obviously, CSS 1 was a great advance for the world of web development, but the truth is that by then designers had gotten used to mixing content with presentation, through the use of HTML tags that were present and still working. in browsers. In addition, CSS 1 had been presented with many deficiencies, which meant that a new standard had to be presented quickly. This is how CSS 2 would be released as a recommendation after just one year, in 1998.
+                    </p>
+
+                    <p>
+                        From this point on, the world of open standards for the web came to a general standstill. Not just CSS, but HTML and other languages like Javascript. CSS 2 had a revision released as CSS 2.1 in which they added some new selectors, but it took years before a new version was released. However, we entered a dark stage in which CSS did not fully cover its objectives.
+                    </p>
+
+                    <ul>
+                        <li>
+                            CSS support was not the same in all browsers.
+                        </li>
+                        <br>
+                        <li>
+                            Browsers were dedicated to incorporating functionality through prefixes, which made writing CSS more difficult and tedious.
+                        </li>
+                        <br>
+                        <li>
+                            The standard did not cover all the needs of designers.
+                        </li>
+                    </ul>
+
+                    <p>
+                        However, web designers and developers had to use the famous "CSS hacks", which were nothing more than tricks to achieve the desired results in unorthodox ways, which ended up in complex code and highly oriented to meet the needs of certain browsers. . To give a couple of examples, you had to use layers nested at various levels to get things like rounded edges, Javascript to get responsive font sizes, images with alpha channel transparency (PNG) to get shadows, etc. In the end, getting a moderately attractive and homogeneous design across browsers with only CSS was very complicated and you had to keep changing the HTML or Javascript to solve their shortcomings.
+                    </p>
+
+                    <p>
+                        The appearance of CSS 3 only materialized in 2014 with the movement of HTML 5. It would come to provide solutions to most of the needs of designers and to finally cover the main objective of the language, the separation of the content from the presentation. However, it should be said that CSS 3 was presented through a large group of specifications, which have been improving and increasing to date, so it is not so much a one-off release, but a continuous improvement of the standard at various levels.
+                    </p>
+
+                    <p>
+                        Today we can say that CSS meets the needs of designers, even more so after the appearance of CSS Flexbox, which makes it extremely easy to place elements on the page. Together of course with the latest contribution to the CSS Grid System specifications, which has finally brought a complete and versatile grid system to the web, through which web designers have truly powerful tools to position elements on the page, so regardless of how they appear in the HTML code.
+                    </p>
+                </article>
+            </section>
+            <hr>
+            <section class="main-section" id="Separate_CSS_code_from_HTML_code">
+                <header>Separate CSS code from HTML code</header>
+                <article>
+                    <p>
+                        The focus of CSS is to serve to define the presentation layer, that is, the part related to the appearance. It is something that any student is usually clear about when they are learning CSS, since when teaching HTML it has probably been insisted on, but it should always be reinforced.
+                    </p>
+
+                    <p>
+                        In the HTML code we place the content, that is, what should be displayed, while with CSS we define the presentation, that is, how it should be displayed. This leads us to a series of uses of CSS that we must respect as good practices.
+                    </p>
+
+                    <ul>
+                        <li>
+                            The appropriate thing to do when we work with CSS is to write the code in independent files, which will have a .css extension. Each thing in its place!
+                        </li>
+                        <br>
+                        <li>
+                            Therefore, it is not convenient to place CSS code inside HTML files. We must avoid placing styles in &lt;style&gt; tags within the HTML code itself.
+                        </li>
+                        <br>
+                        <li>
+                            Of course, much less advisable is to place styles in the "style" attributes of HTML tags.
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <hr>
+            <section class="main-section" id="Associate_a_CSS_to_a_web_page">
+                <header>Associate a CSS to a web page</header>
+                <article>
+                    <p>
+                        In order for a page of content to gain a certain look, we'll need a means to load or associate the CSS within an HTML. This operation can be done at various levels, but the most common is to link the CSS through the &lt;link&gt; tag.
+                    </p>
+
+                    <pre class="code-global">
+                        <code class="code-html">
+                            <span class="token tag">
+                                <span class="token tag">
+                                    <span class="token punctuation"><</span>
+                                    link
+                                </span>
+                                <span class="token attr-name">rel</span>
+                                <span class="token attr-value">
+                                    <span class="token punctuation">=</span>
+                                    <span class="token punctuation">"</span>
+                                    stylesheet
+                                    <span class="token punctuation">"</span>
+                                </span>
+                                <span class="token attr-name">href</span>
+                                <span class="token attr-value">
+                                    <span class="token punctuation">=</span>
+                                    <span class="token punctuation">"</span>
+                                    styles.css
+                                    <span class="token punctuation">"</span>
+                                </span>
+                                <span class="token tag">
+                                    <span class="token punctuation">></span>
+                                </span>
+                            </span>
+                        </code>
+                    </pre>
+
+                    <p>
+                        That tag is usually placed in the &lt;head&gt;, so the CSS is loaded from the start and allows the HTML page to be rendered in the style defined in the linked CSS file.
+                    </p>
+
+                    <p>
+                        Typically <strong>that same tag will be placed on all pages of the website</strong>, thus loading the same CSS file with the same style declaration. This will have two important effects:
+                    </p>
+
+                    <ul>
+                        <li>
+                            It allows all the content of the web to have a homogeneous appearance, defined by means of that centralized CSS file.
+                        </li>
+                        <br>
+                        <li>
+                            It allows having a more optimized site and the same declarations are reused. Also usually the .css file will be cached in the browser, so the second or subsequent pages of the site the CSS file does not need to download the file again saving data transfer and improving loading speed.
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <hr>
+            <section class="main-section" id="Alternative_ways_to_load_CSS">
+                <header>Alternative ways to load CSS</header>
+                <article>
+                    <p>
+                        There are other possible ways to be able to associate the CSS to an HTML document, not as recommended as the previous one, but they are useful if we need it.
+                    </p>
+
+                    <h4>
+                        Using the &lt;style&gt; tag
+                    </h4>
+
+                    <p>
+                        Alternatively the CSS can also be loaded via a &lt;style&gt; tag on the page where that CSS is needed.
+                    </p>
+
+                    <pre class="code-global">
+                        <!--[ &nbsp; ] es un espacio en linea-->
+                        <code class="code-css">
+                            <span class="token tag">
+                                <span class="token punctuation">&lt;</span>
+                                style
+                                <span class="token punctuation">&gt;</span>
+                            </span>
+                            <span class="token style">
+                                <span class="token code-css">
+                                    <span class="token selector">body</span>&nbsp;<span class="token punctuation">{</span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="token property">background-color</span><span class="token punctuation">:</span>&nbsp;<span class="token hexcode">#eee</span><span class="token punctuation">;</span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="token property">color</span><span class="token punctuation">:</span>&nbsp;<span class="token hexcode">#303050</span><span class="token punctuation">;</span>
+                                    <span class="token punctuation">}</span>
+                                    
+                                    <span class="token selector">p</span>&nbsp;<span class="token punctuation">{</span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="token property">margin-top</span><span class="token punctuation">:</span>&nbsp;<span class="token number">0.2</span><span class="token unit">rem</span><span class="token punctuation">;</span>
+                                    <span class="token punctuation">}</span>
+                                </span>
+                            </span>
+                            <span class="token tag">
+                                <span class="token punctuation">&lt;</span>
+                                <span class="token punctuation">/</span>
+                                style
+                                <span class="token punctuation">&gt;</span>
+                            </span>
+                        </code>
+                    </pre>
+
+                    <p>
+                        These style declarations will be applied only to the HTML file that contains them, being able to create styles that affect a single page.
+                    </p>
+
+                    <p>
+                        However, it is preferable to use the &lt;link&gt; tag, since this causes the CSS code to be cached and, since it is located in a single file, if it is changed, it will affect the entire website, improving maintenance.
+                    </p>
+
+                    <h4>
+                        Defining a style attribute in HTML tags
+                    </h4>
+
+                    <p>
+                        The last alternative for CSS placement is the so-called "CSS inline" which consists of applying the style rules to the labels that you want to affect, with the style attribute of the label itself.
+                    </p>
+
+                    <pre class="code-global">
+                        <code class="code-html">
+                            <span class="token tag">
+                                <span class="token tag">
+                                    <span class="token tag">&lt;</span>
+                                    div
+                                </span>
+                                <span class="token style-attr code-css">
+                                    <span class="token attr-name">style</span>
+                                    <span class="token punctuation">=</span>
+                                    <span class="token punctuation">"</span>
+                                    <span class="token attr-value">
+                                        <span class="token property">margin-bottom</span><span class="token punctuation">:</span>
+                                        <span class="token number">2</span><span class="token unit">rem</span><span class="token punctuation">;</span>
+                                        <span class="token property">border</span><span class="token punctuation">:</span>
+                                        <span class="token number">1</span><span class="token unit">px</span>
+                                        <span class="token unit">solid</span>
+                                        <span class="token unit">red</span><span class="token punctuation">;</span>
+                                        <span class="token property">padding</span><span class="token punctuation">:</span>
+                                        <span class="token number">1</span><span class="token unit">rem</span><span class="token punctuation">;</span>
+                                    </span>
+                                    <span class="token punctuation">"</span>
+                                </span>
+                            </span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Division content...
+                            <span class="token tag">
+                                <span class="token punctuation">&lt;</span>
+                                <span class="token punctuation">/</span>
+                                div
+                                <span class="token punctuation">&gt;</span>
+                            </span>
+                        </code>
+                    </pre>
+
+                    <p>
+                        <strong>Inline CSS should be avoided</strong> whenever possible, as it results in unnecessary mixing of the content layer with the presentation layer, losing many of the benefits of separating the layers and making it difficult to maintain and optimize the CSS. website.
+                    </p>
+                </article>
+            </section>
+            <hr>
+            <section class="main-section" id="CSS_selectors">
+                <header>CSS selectors</header>
+                <article>
+                    <p>
+                        CSS selectors allow us to access any element or group of elements, to apply styles to it/them in a single declaration. As their name indicates, they allow you to select those elements on which the style rules are going to be applied.
+                    </p>
+
+                    <p>
+                        Within the CSS code we can use selectors and apply a certain set of styles to them. To do this we write the selector and place the style attributes enclosed in braces:
+                    </p>
+
+                    <pre class="code-global">
+                        <code class="code-css">
+                            <span class="token selector">selector</span>&nbsp;<span class="token punctuation">{</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="token property">color</span><span class="token punctuation">:</span>&nbsp;red<span class="token punctuation">;</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="token property">width</span><span class="token punctuation">:</span>&nbsp;auto<span class="token punctuation">;</span>
+                            <span class="token punctuation">}</span>
+                        </code>
+                    </pre>
+
+                    <p>
+                        There are selectors of the most varied, which allow you to adjust in a very precise way which elements you want to select. The most important are the following:
+                    </p>
+
+                    <ul>
+                        <li>
+                            <strong>Label:</strong> they are used to select all the elements of the same label or HTML tag.
+                        </li>
+                    </ul>
+                    
+                    <pre class="code-global">
+                        <code class="code-css">
+                            <span class="token selector">h1</span>&nbsp;<span class="token punctuation">{</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="token property">font-size</span><span class="token punctuation">:</span>&nbsp;<span class="token number">26</span><span class="token unit">px</span><span class="token punctuation">;</span>
+                            <span class="token punctuation">}</span>
+                        </code>
+                    </pre>
+
+                    <ul>
+                        <li>
+                            <strong>Class:</strong> Selects all elements of a given class. (CSS class).
+                        </li>
+                    </ul>
+
+                    <pre class="code-global">
+                        <code class="code-css">
+                            <span class="token selector">.featured</span>&nbsp;<span class="token punctuation">{</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="token property">font-width</span><span class="token punctuation">:</span>&nbsp;bold<span class="token punctuation">;</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="token property">color</span><span class="token punctuation">:</span>&nbsp;orange<span class="token punctuation">;</span>
+                            <span class="token punctuation">}</span>
+                        </code>
+                    </pre>
+
+                    <ul>
+                        <li>
+                            <strong>Identifier:</strong> Allows you to select individual tags by the tag's Id attribute.
+                        </li>
+                    </ul>
+
+                    <pre class="code-global">
+                        <code class="code-css">
+                            <span class="token selector">#formularioAlfa</span>&nbsp;<span class="token punctuation">{</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="token property">border</span><span class="token punctuation">:</span>&nbsp;<span class="token number">1</span><span class="token unit">px</span>&nbsp;solid&nbsp;<span class="token hexcode">#99c</span><span class="token punctuation">;</span>
+                            <span class="token punctuation">}</span>
+                        </code>
+                    </pre>
+
+                    <ul>
+                        <li>
+                            <strong>Attribute:</strong> They allow you to select all the labels that have a given attribute, or an attribute with a certain value.
+                        </li>
+                    </ul>
+
+                    <pre class="code-global">
+                        <code class="code-css">
+                            <span class="token selector">
+                                <span class="token punctuation">[</span>
+                                <span class="token attribute">title</span>
+                                <span class="token punctuation">]</span><span class="token punctuation">{</span>
+                            </span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="token property">text-decoration</span><span class="token punctuation">:</span>&nbsp;none<span class="token punctuation">;</span>
+                            <span class="token punctuation">}</span>
+
+                            <span class="token selector">
+                                <span class="token punctuation">[</span>
+                                <span class="token attribute">align="center"</span>
+                                <span class="token punctuation">]</span><span class="token punctuation">{</span>
+                            </span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="token property">border</span><span class="token punctuation">:</span>&nbsp;<span class="token number">1</span><span class="token unit">px</span>&nbsp;solid&nbsp;red<span class="token punctuation">;</span>
+                            <span class="token punctuation">}</span>
+                        </code>
+                    </pre>
+                </article>
+            </section>
+            <hr>
+            <section class="main-section" id="Properties_and_values_in_CSS">
+                <header>Properties and values in CSS</header>
+                <article>
+                    <p>
+                        CSS properties are all those characteristics of the elements to which we can apply style. From a background color to a width. The given style is applied by defining a value on that property.
+                    </p>
+
+                    <p>
+                        Therefore, CSS is written by defining selectors, on which properties with their values are applied. The syntax is as follows:
+                    </p>
+
+                    <pre class="code-global">
+                        <code class="code-css">
+                            <span class="token selector">selector</span>&nbsp;<span class="token punctuation">{</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="token property">property-name</span><span class="token punctuation">:</span>&nbsp;valor<span class="token punctuation">;</span>
+                            <span class="token punctuation">}</span>
+                        </code>
+                    </pre>
+
+                    <p>
+                        In order to master CSS we must know a large number of properties, which will allow us to define style values on each particular aspect of an element. However, it is not necessary to become obsessed with learning all the properties and their possible values, because it is something that little by little we will internalize with practice throughout our work.
+                    </p>
+                </article>
+            </section>
+            <hr>
+            <section class="main-section" id="CSS_preprocessors">
+                <header>CSS preprocessors</header>
+                <article>
+                    <p>
+                        Preprocessors are essential tools for today's frontend development. They allow you to develop CSS in a more agile way but above all create a more maintainable code.
+                    </p>
+
+                    <p>
+                        For this, the preprocessors extend the characteristics of the CSS language, allowing the use of variables, functions (mixins) and various other ways to shorten the writing of the code.
+                    </p>
+                    
+                    <p>
+                        Preprocessors do not run in the browser environment. Instead they are processed, compiling your code into standard CSS code that any browser can understand. A number of CSS enhancements such as minification are often included in that build process as well.
+                    </p>
+
+                    <p>
+                        The most common preprocessors are Less and <a class="link-style" href="https://desarrolloweb.com/home/sass" target="_blank">Sass</a>. Sass being the most widespread in the frontend community by far.
+                    </p>
+                </article>
+            </section>
+            <hr>
+            <section class="main-section" id="CSS_Frameworks">
+                <header>CSS Frameworks</header>
+                <article>
+                    <p>
+                        CSS frameworks, sometimes also called design frameworks, are tools that allow us to implement a solid framework on which to develop the aesthetic part of web projects. They offer several advantages, among which two main ones stand out:
+                    </p>
+
+                    <ul>
+                        <li>
+                            The agility for the generation of CSS styles and the aesthetic appearance of web sites and applications.
+                        </li>
+                        <br>
+                        <li>
+                            The creation of a graphic theme, which can be maintained throughout an entire site or application, generating greater consistency in the design.
+                        </li>
+                    </ul>
+
+                    <p>
+                        CSS frameworks therefore allow optimized development, which is also very useful in business projects, where it is necessary to follow the same line of design by several developers.
+                    </p>
+
+                    <p>
+                        Within the world of CSS frameworks we find two main types:
+                    </p>
+
+                    <p>
+                        <strong>Component-based frameworks:</strong> they offer a CSS code base that allows you to easily create, through classes, a multitude of components such as buttons, lists, tabs, drop-down menus, stylized forms, etc. Within this classification, the most relevant framework is Bootstrap.
+                    </p>
+
+                    <p>
+                        <strong>Frameworks based on utility classes:</strong> also called "utility first frameworks", which offer a huge number of atomic utility classes, designed to apply a specific value to a specific CSS property. A utility class on its own rather little (could just be a 1 rem margin at the bottom), but by combining various utility classes you can generate all sorts of totally custom user interfaces. Within this classification we find <a class="link-style" href="https://desarrolloweb.com/home/tailwind-css" target="_blank">Tailwind CSS</a>.
+                    </p>
+
+                    <p>
+                        The advantage of component-based frameworks is that they give you a lot of pre-built styling work, with well-defined design themes. However, component-based frameworks sometimes also have some disadvantages, such as greater rigidity when developing and difficulty in making the design of several projects that use the same framework stand out from each other.
+                    </p>
+
+                    <p>
+                        The advantage of utility class-based frameworks is that the design achieved with them is completely unique for each website, but the disadvantage is that they use many classes to style page elements.
+                    </p>
+                </article>
+            </section>
+            <hr>
+            <footer>
+                <h3 id="important-information">
+                    ¡IMPORTANT INFORMATION!
+                </h3>
+                <p id="footer-information">
+                    This page is part of a group of projects that I must program to obtain the certification of an online bootcamp that I am studying.
+                </p>
+                <p id="footer-information">
+                    This is part of a group of certification projects that will be included in my portfolio.
+                </p>
+                <br>
+                &copy; Waren Sánchez, 2023
+            </footer>
+        </main>
+    </body>
+</html>
